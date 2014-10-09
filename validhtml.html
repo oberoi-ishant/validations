@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+	.txtFieldWr.err-pr{
+		border: 1px solid red;
+	}
+
+	.txtFieldWr{
+		border: 1px solid #000;
+		width: 150px;
+	}
+
+	.txtField{
+		border: none;
+		width: 100px;
+		padding: 10px;
+	}
+
+	.txtField.err{
+
+	}
+
+
+</style>
+
+</head>
+<body>
+<form action="/" id="userForm">
+	<div class="userNameWr txtFieldWr">
+		<input type="text" value="" id="userName" class="txtField" placeholder="User Name">
+	</div>
+	<div class="userAgeWr txtFieldWr">
+		<input type="text" value="" id="userAge" class="txtField" placeholder="User Age">
+	</div>
+	<input type="button" value="submit" id="btnSubmit">
+</form>
+<div class="error_msg" id="error_msg"></div>
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="./validation.js"></script>
+</body>
+</html>
